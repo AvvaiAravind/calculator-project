@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+/* Hide spinner in Chrome, Safari, Edge */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .display {
   display: none;
 }
@@ -80,6 +87,7 @@ main {
 
 button:hover {
   background-color: rgb(204, 228, 248);
+  cursor: pointer;
 }
 
 #zero {
